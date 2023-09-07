@@ -40,7 +40,9 @@ export default function Home() {
         />
       </div>
 
-      <Link href="/company">company</Link>
+      <Link href="/service">Our Service</Link>
+      <Link href="/equipment">Equipment</Link>
+      <Link href="/company">Company</Link>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a

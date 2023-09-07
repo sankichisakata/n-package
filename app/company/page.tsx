@@ -1,8 +1,10 @@
 
-export default function company() {
+const Company = () => {
     return(
-        <main>
-            <h2>company</h2>
-        </main>
+        <>
+            <h2 className="text-2xl">Company</h2>
+        </>
     )
 }
+
+export default Company;
