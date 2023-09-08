@@ -1,4 +1,6 @@
 import './globals.css'
+import Header from '../components/layouts/header/header'
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -16,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex justify-center items-center h-screen">{children}</body>
+      <body>
+        <Header />
+        {children}
+        </body>
     </html>
   )
 }
