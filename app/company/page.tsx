@@ -2,7 +2,10 @@
 const Company = () => {
     return(
         <>
-            <h2 className="text-2xl">Company</h2>
+            <div className="bg-yellow-300 h-screen w-fill flex justify-center items-center">
+            <h2 className="text-2xl">会社概要</h2>
+            </div>
+            
         </>
     )
 }
