@@ -1,13 +1,16 @@
 import Link from 'next/link';
+import TemporaryDrawer from '@/components/elements/drawer/drawer';
 
 const header = () => {
   return (
     <header>
-      <nav className="bg-gray-100/50 fixed flex justify-center items-center top-0 left-0 p-2 z-10 w-full">
-        <ul className="bg-gray-200 flex justify-center items-center space-x-2">
+      <nav className="bg-gray-100/50 fixed flex justify-between items-center top-0 left-0 p-2 z-10 w-full">
+        <TemporaryDrawer />
+
+        <ul className="bg-gray-200 text-black flex justify-center items-center space-x-2">
           <li>
             <Link href="/">
-                <img src="/vercel.svg" className="w-32" />
+                N-Pacakge
             </Link>
           </li>
           <li>
@@ -20,6 +23,7 @@ const header = () => {
           <Link href="/company">会社概要</Link>
           </li>
         </ul>
+
       </nav>
     </header>
   );
