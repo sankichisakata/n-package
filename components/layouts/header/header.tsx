@@ -5,7 +5,6 @@ const header = () => {
   return (
     <header>
       <nav className="bg-gray-100/50 fixed flex justify-between items-center top-0 left-0 p-2 z-10 w-full">
-        <TemporaryDrawer />
 
         <ul className="bg-gray-200 text-black flex justify-center items-center space-x-2">
           <li>
@@ -22,7 +21,12 @@ const header = () => {
           <li>
           <Link href="/company">会社概要</Link>
           </li>
+          <li>
+          <Link href="/contact">お問い合わせ</Link>
+          </li>
         </ul>
+
+        <TemporaryDrawer />
 
       </nav>
     </header>

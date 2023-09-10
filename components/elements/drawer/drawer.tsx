@@ -41,7 +41,8 @@ export default function TemporaryDrawer() {
 
   const list = (anchor: Anchor) => (
     <Box
-      
+      sx={{ width : '100%',
+       }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -49,46 +50,54 @@ export default function TemporaryDrawer() {
       <List>
           <ul className="text-black flex flex-col justify-center items-center space-x-2">
             <li>
-            <ListItemButton>
+            
               <Link href="/">
-                  N-Pacakge
+                <ListItemButton>
+                  <ListItemIcon>
+                    N-Pacakge
+                  </ListItemIcon>
+                </ListItemButton>
               </Link>
-            </ListItemButton>
             </li>
             <li>
-            <ListItemButton>
-            <Link href="/service">事業内容</Link>
-            </ListItemButton>
+            
+            <Link href="/service">
+              <ListItemButton>
+                <ListItemIcon>
+                  事業内容
+                </ListItemIcon>
+              </ListItemButton>
+            </Link>
             </li>
             <li>
-            <ListItemButton>
-            <Link href="/equipment">設備一覧</Link>
-            </ListItemButton>
+            
+            <Link href="/equipment">
+              <ListItemButton>
+                <ListItemIcon>
+                  設備一覧
+                </ListItemIcon>
+              </ListItemButton>
+            </Link>
             </li>
             <li>
-            <ListItemButton>
-            <Link href="/company">会社概要</Link>
-            </ListItemButton>
+            
+            <Link href="/company">
+              <ListItemButton>
+                <ListItemIcon>
+                会社概要
+                </ListItemIcon>
+              </ListItemButton>
+            </Link>
             </li>
           </ul>
       </List>
       <Divider />
-      <List>
-        {['N-Package', '事業内容', '設備一覧','会社概要'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+
     </Box>
   );
 
   return (
-    <div>
+    <div >
       {(['left'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
@@ -98,6 +107,7 @@ export default function TemporaryDrawer() {
             onClose={toggleDrawer(anchor, false)}
           >
             {list(anchor)}
+           <Link href="/contact">お問い合わせ</Link>
           </Drawer>
         </React.Fragment>
       ))}
