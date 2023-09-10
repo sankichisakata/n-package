@@ -18,7 +18,6 @@ const FooterMain = () => {
                         <address>〒332-0006&nbsp;埼玉県川口市末広2-7-15</address>
                         <p>TEL:048-287-8055</p>
                     </div>
-                    
                     <div className='text-xs'>
                         <p >加賀ICより車で101分</p>
                         <p >川口元郷駅2番出口より徒歩13分</p>
