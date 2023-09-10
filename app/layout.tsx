@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'N-Pckage',
-  description: 'ダンボールのプロフェッショナル企業です、企画製造販売まで。',
+  description: 'ダンボールのプロフェッショナル企業です|企画・製造・販売、お気軽にご相談ください。',
 }
 
 export default function RootLayout({
@@ -17,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body>
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
         </body>
     </html>
   )
