@@ -50,7 +50,6 @@ export default function TemporaryDrawer() {
       <List>
           <ul className="text-black flex flex-col justify-center items-center space-x-2">
             <li>
-            
               <Link href="/">
                 <ListItemButton>
                   <ListItemIcon>
@@ -59,8 +58,8 @@ export default function TemporaryDrawer() {
                 </ListItemButton>
               </Link>
             </li>
-            <li>
             
+            <li>
             <Link href="/service">
               <ListItemButton>
                 <ListItemIcon>
@@ -74,7 +73,7 @@ export default function TemporaryDrawer() {
             <Link href="/equipment">
               <ListItemButton>
                 <ListItemIcon>
-                  設備一覧
+                  設備案内
                 </ListItemIcon>
               </ListItemButton>
             </Link>
