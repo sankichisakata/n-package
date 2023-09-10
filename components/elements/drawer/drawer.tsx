@@ -14,6 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 // import MailIcon from '@mui/icons-material/Mail';
 
 import Link from 'next/link';
+import FooterMain from '../footerMain/footerMain';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -105,8 +106,7 @@ export default function TemporaryDrawer() {
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
           >
-            {list(anchor)}
-           <Link href="/contact">お問い合わせ</Link>
+            <FooterMain/>
           </Drawer>
         </React.Fragment>
       ))}
