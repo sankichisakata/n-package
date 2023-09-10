@@ -4,8 +4,8 @@ import MenuList from '../menuList/menuList';
 
 const FooterMain = () => {
     return(
-        <Container
-        className='w-full h-full bg-gray-900'
+        <div
+        className='bg-gray-900 w-full h-full'
         >
                 <div className='
                 py-10
@@ -27,7 +27,7 @@ const FooterMain = () => {
 
             <MenuList/>
             
-        </Container>
+        </div>
         
     )
 }
